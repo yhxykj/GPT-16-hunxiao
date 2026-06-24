@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="XcC-Qx-87z" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="set-ZU-UYb" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="oJd-Wj-9jl" customClass="GYPChuangSocketCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJd-Wj-9jl" id="vPs-Eo-IBb">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appItem0" translatesAutoresizingMaskIntoConstraints="NO" id="V1V-ze-DsW">
+                        <rect key="frame" x="15" y="25.666666666666671" width="20" height="20"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新建对话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCS-64-DJu">
+                        <rect key="frame" x="41" y="27" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V1V-ze-DsW" firstAttribute="centerY" secondItem="vPs-Eo-IBb" secondAttribute="centerY" id="Rx0-XX-tTX"/>
+                    <constraint firstItem="dCS-64-DJu" firstAttribute="leading" secondItem="vPs-Eo-IBb" secondAttribute="leading" constant="40.98" id="LRn-Vp-meU"/>
+                    <constraint firstItem="dCS-64-DJu" firstAttribute="centerY" secondItem="V1V-ze-DsW" secondAttribute="centerY" id="UQu-7J-pyD"/>
+                    <constraint firstItem="V1V-ze-DsW" firstAttribute="leading" secondItem="vPs-Eo-IBb" secondAttribute="leading" constant="15.03" id="fPv-QQ-tLL"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dCS-64-DJu" secondAttribute="trailing" constant="13.01" id="hOl-Tg-PaJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="o19-58-9RT"/>
+            <connections>
+                <outlet property="icon" destination="V1V-ze-DsW" id="wIJ-c7-Dh8"/>
+                <outlet property="label" destination="dCS-64-DJu" id="D9A-cw-Jno"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-3.1690140845070425"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="appItem0" width="20" height="20"/>
+    </resources>
+</document>
