@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "背景大底 + 位图 + 矩形 + 编组 3 + AI助你实现创意的每一个细节 + ai creation + 智能创作 蒙版@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "背景大底 + 位图 + 矩形 + 编组 3 + AI助你实现创意的每一个细节 + ai creation + 智能创作 蒙版@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
