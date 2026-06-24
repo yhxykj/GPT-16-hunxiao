@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="XcC-Qx-87z" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="set-ZU-UYb" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tKA-8R-CoI" customClass="YIImageBufferCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPT-nv-ekr">
+                        <rect key="frame" x="15" y="42.666666666666657" width="313" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICP-dH-PFZ">
+                                <rect key="frame" x="21" y="21" width="233" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-Uo-xRv">
+                                <rect key="frame" x="269" y="19" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.98" id="bfg-Io-dRN"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="reusableType_nStar"/>
+                                <connections>
+                                    <action selector="down:" destination="tKA-8R-CoI" eventType="touchUpInside" id="DGg-V4-MiG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ICP-dH-PFZ" firstAttribute="centerY" secondItem="aPT-nv-ekr" secondAttribute="centerY" id="kpu-yt-9Fe"/>
+                            <constraint firstItem="BCJ-Uo-xRv" firstAttribute="leading" secondItem="ICP-dH-PFZ" secondAttribute="trailing" constant="15.02" id="bGx-FN-xP0"/>
+                            <constraint firstItem="BCJ-Uo-xRv" firstAttribute="centerY" secondItem="aPT-nv-ekr" secondAttribute="centerY" id="PyD-gR-iPX"/>
+                            <constraint firstAttribute="trailing" secondItem="BCJ-Uo-xRv" secondAttribute="trailing" id="P0R-Dy-asy"/>
+                            <constraint firstAttribute="height" constant="59.99" id="amL-Tf-wgS"/>
+                            <constraint firstItem="ICP-dH-PFZ" firstAttribute="leading" secondItem="aPT-nv-ekr" secondAttribute="leading" constant="20.99" id="hnR-Uc-Ybr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="hRM-gb-1X4"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aPT-nv-ekr" secondAttribute="trailing" constant="15.04" id="IbX-Vl-INP"/>
+                <constraint firstItem="aPT-nv-ekr" firstAttribute="leading" secondItem="tKA-8R-CoI" secondAttribute="leading" constant="15.02" id="IBw-oS-7T4"/>
+                <constraint firstItem="aPT-nv-ekr" firstAttribute="centerY" secondItem="tKA-8R-CoI" secondAttribute="centerY" id="lSX-YJ-5pS"/>
+            </constraints>
+            <size key="customSize" width="343" height="145"/>
+            <connections>
+                <outlet property="labeel" destination="ICP-dH-PFZ" id="GtD-YX-m7D"/>
+            </connections>
+            <point key="canvasLocation" x="254.61538461538461" y="-39.454976303317537"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="reusableType_nStar" width="15" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="XcC-Qx-87z" userLabel="File's Owner" customClass="AOVAymentController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="EfI-xx-lPp" id="5Z7-es-1Su"/>
+                <outlet property="nav_label" destination="G6R-g9-uyl" id="ecf-p4-fUL"/>
+                <outlet property="view" destination="ZWU-eA-6pL" id="zbU-QP-yQp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="set-ZU-UYb" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZWU-eA-6pL">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-wO-sXO">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFr-Mr-iNu">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.99" id="M4I-YU-PAp"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="bufferAbout"/>
+                            <connections>
+                                <action selector="back:" destination="XcC-Qx-87z" eventType="touchUpInside" id="JrK-FY-62E"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6R-g9-uyl">
+                            <rect key="frame" x="174" y="11.666666666666664" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ZFr-Mr-iNu" firstAttribute="leading" secondItem="iKz-wO-sXO" secondAttribute="leading" id="tQW-ks-rtS"/>
+                        <constraint firstAttribute="bottom" secondItem="ZFr-Mr-iNu" secondAttribute="bottom" id="sli-9n-zYG"/>
+                        <constraint firstItem="G6R-g9-uyl" firstAttribute="centerX" secondItem="iKz-wO-sXO" secondAttribute="centerX" id="uIv-8L-VQL"/>
+                        <constraint firstAttribute="height" constant="44.03" id="yEq-4K-mEX"/>
+                        <constraint firstItem="ZFr-Mr-iNu" firstAttribute="top" secondItem="iKz-wO-sXO" secondAttribute="top" id="K62-5K-97Y"/>
+                        <constraint firstItem="G6R-g9-uyl" firstAttribute="centerY" secondItem="iKz-wO-sXO" secondAttribute="centerY" id="rYA-dh-gO3"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-xx-lPp">
+                    <rect key="frame" x="0.0" y="91" width="390" height="625"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FI6-eT-h9D">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="XcC-Qx-87z" id="1dg-q0-bD0"/>
+                        <outlet property="delegate" destination="XcC-Qx-87z" id="axN-4C-J8V"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55d-qB-cz1">
+                    <rect key="frame" x="16" y="741" width="358" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="立即生成"/>
+                    <connections>
+                        <action selector="done:" destination="XcC-Qx-87z" eventType="touchUpInside" id="II5-xH-BHg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0Ah-Vb-Ssk"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0Ah-Vb-Ssk" firstAttribute="trailing" secondItem="EfI-xx-lPp" secondAttribute="trailing" id="l7j-Oa-Qvw"/>
+                <constraint firstItem="0Ah-Vb-Ssk" firstAttribute="trailing" secondItem="iKz-wO-sXO" secondAttribute="trailing" id="VQo-fw-16z"/>
+                <constraint firstItem="iKz-wO-sXO" firstAttribute="top" secondItem="0Ah-Vb-Ssk" secondAttribute="top" id="p3a-ky-K0P"/>
+                <constraint firstItem="55d-qB-cz1" firstAttribute="top" secondItem="EfI-xx-lPp" secondAttribute="bottom" constant="24.98" id="bqm-Or-aDC"/>
+                <constraint firstItem="55d-qB-cz1" firstAttribute="leading" secondItem="0Ah-Vb-Ssk" secondAttribute="leading" constant="15.98" id="YEa-Wj-POi"/>
+                <constraint firstItem="EfI-xx-lPp" firstAttribute="top" secondItem="iKz-wO-sXO" secondAttribute="bottom" id="trU-I4-BxZ"/>
+                <constraint firstItem="0Ah-Vb-Ssk" firstAttribute="bottom" secondItem="55d-qB-cz1" secondAttribute="bottom" constant="15.01" id="esQ-et-lgz"/>
+                <constraint firstItem="0Ah-Vb-Ssk" firstAttribute="trailing" secondItem="55d-qB-cz1" secondAttribute="trailing" constant="15.98" id="3mu-pZ-urk"/>
+                <constraint firstItem="iKz-wO-sXO" firstAttribute="leading" secondItem="0Ah-Vb-Ssk" secondAttribute="leading" id="yKo-8F-lnW"/>
+                <constraint firstItem="EfI-xx-lPp" firstAttribute="leading" secondItem="0Ah-Vb-Ssk" secondAttribute="leading" id="Zzi-ux-hY1"/>
+            </constraints>
+            <point key="canvasLocation" x="125" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="立即生成" width="358" height="54"/>
+        <image name="bufferAbout" width="10" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

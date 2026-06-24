@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="XcC-Qx-87z" userLabel="File's Owner" customClass="KMCardController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="ZWU-eA-6pL" id="zbU-QP-yQp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="set-ZU-UYb" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZWU-eA-6pL">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareKuaijiedenglu" translatesAutoresizingMaskIntoConstraints="NO" id="wgo-lK-6RR">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qD-Iq-dwa">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="freeClose"/>
+                    <connections>
+                        <action selector="_nextClick" destination="XcC-Qx-87z" eventType="touchUpInside" id="ew7-Bg-vpG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc7-4e-jnE">
+                    <rect key="frame" x="10" y="59" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55.02" id="6oT-ZP-1Br"/>
+                        <constraint firstAttribute="height" constant="44.01" id="wxG-ux-BnC"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="starKuaijiedenglu"/>
+                    <connections>
+                        <action selector="_dissmiss:" destination="XcC-Qx-87z" eventType="touchUpInside" id="PfU-Xg-Cqq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0Ah-Vb-Ssk"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zc7-4e-jnE" firstAttribute="leading" secondItem="0Ah-Vb-Ssk" secondAttribute="leading" constant="9.98" id="Lt2-ov-dJT"/>
+                <constraint firstItem="0Ah-Vb-Ssk" firstAttribute="trailing" secondItem="0qD-Iq-dwa" secondAttribute="trailing" constant="45.97" id="5vx-KA-JaB"/>
+                <constraint firstItem="zc7-4e-jnE" firstAttribute="top" secondItem="0Ah-Vb-Ssk" secondAttribute="top" id="Wc4-TS-kia"/>
+                <constraint firstItem="0Ah-Vb-Ssk" firstAttribute="trailing" secondItem="wgo-lK-6RR" secondAttribute="trailing" id="pMD-Vb-KU9"/>
+                <constraint firstAttribute="bottom" secondItem="wgo-lK-6RR" secondAttribute="bottom" id="TCc-07-0ki"/>
+                <constraint firstItem="wgo-lK-6RR" firstAttribute="top" secondItem="ZWU-eA-6pL" secondAttribute="top" id="wpW-cD-zpH"/>
+                <constraint firstItem="0qD-Iq-dwa" firstAttribute="leading" secondItem="0Ah-Vb-Ssk" secondAttribute="leading" constant="46.01" id="h3t-x5-clz"/>
+                <constraint firstItem="wgo-lK-6RR" firstAttribute="leading" secondItem="0Ah-Vb-Ssk" secondAttribute="leading" id="e1g-Jk-HgO"/>
+                <constraint firstItem="0Ah-Vb-Ssk" firstAttribute="bottom" secondItem="0qD-Iq-dwa" secondAttribute="bottom" constant="19.99" id="RHm-ya-WyL"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shareKuaijiedenglu" width="390" height="844"/>
+        <image name="freeClose" width="298" height="54"/>
+        <image name="starKuaijiedenglu" width="24" height="24"/>
+    </resources>
+</document>
