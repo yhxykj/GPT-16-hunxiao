@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="XcC-Qx-87z" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="set-ZU-UYb" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tKA-8R-CoI" customClass="IWSocketLaunchCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="302" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="音符背景" translatesAutoresizingMaskIntoConstraints="NO" id="ofn-wM-7rC">
+                        <rect key="frame" x="0.0" y="0.0" width="302" height="130"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="音符" translatesAutoresizingMaskIntoConstraints="NO" id="cq1-U1-Hvc">
+                        <rect key="frame" x="240" y="45" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40.03" id="kai-Ti-c39"/>
+                            <constraint firstAttribute="width" constant="39.96" id="nf7-Pd-8wr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDl-w4-3qX">
+                        <rect key="frame" x="22.000000000000004" y="56" width="37.333333333333343" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="hRM-gb-1X4"/>
+            <constraints>
+                <constraint firstItem="jDl-w4-3qX" firstAttribute="leading" secondItem="tKA-8R-CoI" secondAttribute="leading" constant="21.99" id="FxT-w3-9x6"/>
+                <constraint firstAttribute="bottom" secondItem="ofn-wM-7rC" secondAttribute="bottom" id="Vh4-IS-oY1"/>
+                <constraint firstAttribute="trailing" secondItem="ofn-wM-7rC" secondAttribute="trailing" id="c4a-ps-YJh"/>
+                <constraint firstItem="cq1-U1-Hvc" firstAttribute="centerY" secondItem="tKA-8R-CoI" secondAttribute="centerY" id="PTF-jm-gfq"/>
+                <constraint firstAttribute="trailing" secondItem="cq1-U1-Hvc" secondAttribute="trailing" constant="22.02" id="IJQ-ui-j5f"/>
+                <constraint firstItem="ofn-wM-7rC" firstAttribute="leading" secondItem="tKA-8R-CoI" secondAttribute="leading" id="nZh-BG-Ozc"/>
+                <constraint firstItem="ofn-wM-7rC" firstAttribute="top" secondItem="tKA-8R-CoI" secondAttribute="top" id="I94-8V-E2L"/>
+                <constraint firstItem="jDl-w4-3qX" firstAttribute="centerY" secondItem="tKA-8R-CoI" secondAttribute="centerY" id="VIO-h2-Pas"/>
+            </constraints>
+            <size key="customSize" width="302" height="130"/>
+            <connections>
+                <outlet property="YYImage" destination="cq1-U1-Hvc" id="VZh-ws-lVy"/>
+                <outlet property="YYlabel" destination="jDl-w4-3qX" id="mQ5-Pf-RLd"/>
+            </connections>
+            <point key="canvasLocation" x="324.61538461538458" y="16.350710900473931"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="音符" width="32" height="32"/>
+        <image name="音符背景" width="173" height="72"/>
+    </resources>
+</document>

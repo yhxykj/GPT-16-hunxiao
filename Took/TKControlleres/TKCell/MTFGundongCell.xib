@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="XcC-Qx-87z" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="set-ZU-UYb" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tKA-8R-CoI" customClass="MTFGundongCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="68"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginlogoPhotoLogin" translatesAutoresizingMaskIntoConstraints="NO" id="4sb-iD-znC">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="68"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9T-AQ-tH2">
+                        <rect key="frame" x="14" y="22" width="168" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23.98" id="xvp-1F-VrL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="hRM-gb-1X4"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4sb-iD-znC" secondAttribute="bottom" id="2dQ-3j-ZFC"/>
+                <constraint firstItem="4sb-iD-znC" firstAttribute="top" secondItem="tKA-8R-CoI" secondAttribute="top" id="aaF-4E-oGr"/>
+                <constraint firstItem="4sb-iD-znC" firstAttribute="leading" secondItem="tKA-8R-CoI" secondAttribute="leading" id="tYz-UD-g2y"/>
+                <constraint firstItem="I9T-AQ-tH2" firstAttribute="centerY" secondItem="tKA-8R-CoI" secondAttribute="centerY" id="3Jk-3N-p97"/>
+                <constraint firstAttribute="trailing" secondItem="4sb-iD-znC" secondAttribute="trailing" id="5H2-TY-AMv"/>
+                <constraint firstItem="I9T-AQ-tH2" firstAttribute="leading" secondItem="tKA-8R-CoI" secondAttribute="leading" constant="13.97" id="a3h-8f-d4n"/>
+                <constraint firstAttribute="trailing" secondItem="I9T-AQ-tH2" secondAttribute="trailing" constant="14.99" id="XGD-N8-cZH"/>
+            </constraints>
+            <size key="customSize" width="197" height="90"/>
+            <connections>
+                <outlet property="label" destination="I9T-AQ-tH2" id="auR-6w-lhB"/>
+            </connections>
+            <point key="canvasLocation" x="156.15384615384616" y="112.32227488151658"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="loginlogoPhotoLogin" width="175" height="68"/>
+    </resources>
+</document>
